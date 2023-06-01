@@ -1,13 +1,14 @@
 <h1>Login</h1>
 
-<%= form_with :url => "/sessions" do |form| %>
-  <p>
-    <%= form.label "email" %>
-    <%= form.text_field "email" %>
-    <%= form.label "password" %>
-    <%= form.password_field "password" %>
-  </p>
-  <p>
-    <%= form.submit "Login", :class => "btn btn-primary" %>
-  </p>
-<% end %>
+
+  <%= form_with :url => "/sessions" do |form| %>
+    <div class="mt-3">
+      <%= form.label "email" %>
+      <%= form.text_field "email" %>
+      <%= form.label "password" %>
+      <%= form.password_field "password" %>
+    </div>
+    <div class="mt-3">
+      <%= form.submit "Login", :class => "btn btn-primary" %>
+    </div>
+  <% end %>
